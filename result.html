@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Detection Result</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>🌿 Detection Result</h1>
+
+    <div class="result">
+
+        <h3>Plant</h3>
+        <p>{{ plant }}</p>
+
+        <h3>Possible Disease</h3>
+        <p class="disease">
+            {{ disease }}
+        </p>
+
+        <h3>Description</h3>
+        <p>
+            {{ description }}
+        </p>
+
+        <h3>Recommended Action</h3>
+        <p>
+            {{ treatment }}
+        </p>
+
+    </div>
+
+    <a href="/" class="back">
+        ← Check Another Plant
+    </a>
+
+</div>
+
+</body>
+</html>
